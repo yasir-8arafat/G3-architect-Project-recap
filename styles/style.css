@@ -29,8 +29,8 @@
     color: rgba(19, 19, 19, 1);
 }
 
-.dark2 {
-    color: rgba(66, 66, 66, 1);
+.yellow {
+    color: rgba(255, 144, 14, 1);
 }
 
 .dark3 {
@@ -65,6 +65,12 @@ main {
     font-weight: bold;
     color: rgba(19, 19, 19, 1);
     ;
+}
+main > section{
+    margin-top: 80px;
+}
+main{
+    padding: 20px;
 }
 
 /* Shared Style Over */
@@ -121,17 +127,50 @@ nav a {
 
 /* Main Section Disign Start */
 
+/* Team Section Design start */
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.team-feature > *{
+    margin-bottom: 25px;
+}
+.team-feature{
+    max-width: 535px;
+}
+.sp-1{
+    font-weight: 500;
+}
 
 
-/* Responsive Design Start */
+/* Responsive Desing start for medium devices */
 
-@media screen and (max-width: 600px) {
-
-    .navbar,
-    .navbar ul {
+@media screen and (max-width: 1100px) {
+    .team{
         flex-direction: column;
     }
+    /* Team Section Responsive Over */
+}
 
+
+/* Responsive Design Start for Smal Device */
+
+@media screen and (max-width: 700px) {
+    /* Shared Responsive */
+    .navbar,
+    .navbar ul,.team {
+        flex-direction: column;
+    }
+    /* Shared responsive over */
+
+    /* Header Section Responsive */
     nav ul {
         gap: 15px;
     }
@@ -139,5 +178,14 @@ nav a {
     .head {
         padding: 10px;
     }
+    /* Header section responsive over */
+
+    /* Team section Responsive */
+    .team-img{
+        grid-template-columns: 1fr;
+    }
+    /* Team Section Responsive End */
+
+    /*  */
 
 }
