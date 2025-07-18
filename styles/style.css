@@ -66,10 +66,12 @@ main {
     color: rgba(19, 19, 19, 1);
     ;
 }
-main > section{
+
+main>section {
     margin-top: 80px;
 }
-main{
+
+main {
     padding: 20px;
 }
 
@@ -128,46 +130,125 @@ nav a {
 /* Main Section Disign Start */
 
 /* Team Section Design start */
-.team{
+.team {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 70px;
 }
-.team-img{
+
+.team-img {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
-.team-feature > *{
+
+.team-feature>* {
     margin-bottom: 25px;
 }
-.team-feature{
+
+.team-feature {
     max-width: 535px;
 }
-.sp-1{
+
+.sp-1 {
     font-weight: 500;
 }
 
+/* Team section Design Over */
+
+/* Some Facts Section Design start */
+.fact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.fact-info {
+    max-width: 542px;
+    margin-bottom: 60px;
+}
+
+.fact-info>* {
+    margin-top: 20px;
+}
+
+.fct-no {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: rgba(66, 66, 66, 1);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.fct-txt {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: rgba(114, 114, 114, 1);
+}
+
+.fact-card {
+    width: 242px;
+    height: 242px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+}
+
+.fact-content {
+    text-align: center;
+}
+/* Some Fect section Desig Over */
+
+/* Sponser Section section Design start */
+.sponser-info{
+    max-width: 540px;
+    margin: 40px auto;
+    text-align: center;
+}
+.sponser-info > *{
+    margin-bottom: 10px;
+}
+.sponser-logo{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+}
+.sponser-logo img{
+    filter: grayscale(100%);
+}
+/* sponser Section design over */
 
 /* Responsive Desing start for medium devices */
 
 @media screen and (max-width: 1100px) {
-    .team{
+    .team {
         flex-direction: column;
     }
+
     /* Team Section Responsive Over */
+
+    /* Some-fact section Responsive start */
+    .fact-container,.sponser-logo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
 }
 
 
 /* Responsive Design Start for Smal Device */
 
 @media screen and (max-width: 700px) {
+
     /* Shared Responsive */
     .navbar,
-    .navbar ul,.team {
+    .navbar ul,
+    .team {
         flex-direction: column;
     }
+
     /* Shared responsive over */
 
     /* Header Section Responsive */
@@ -178,14 +259,20 @@ nav a {
     .head {
         padding: 10px;
     }
+
     /* Header section responsive over */
 
     /* Team section Responsive */
-    .team-img{
+    .team-img {
         grid-template-columns: 1fr;
     }
+
     /* Team Section Responsive End */
 
-    /*  */
-
+    /* Some Fact Section Responsive Start */
+    .fact-container,.sponser-logo {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    /* some fect section & sponser Section responsive over */
 }
