@@ -1,8 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Universal Style */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Universal style over */
+
+/* Shared Style */
+.cmn-bg {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.cmn-flx {
+    display: flex;
+}
+
+.dark1 {
+    color: rgba(19, 19, 19, 1);
+}
+
+.dark2 {
+    color: rgba(66, 66, 66, 1);
+}
+
+.dark3 {
+    color: rgba(114, 114, 114, 1);
+}
+
+.navbar,
+.banner,
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cmn-btn {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 144, 14, 1);
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+}
+
+.cmn-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(114, 114, 114, 1);
+}
+
+.cmn-heading {
+    font-size: 2.82rem;
+    font-weight: bold;
+    color: rgba(19, 19, 19, 1);
+    ;
+}
+
+/* Shared Style Over */
+
+/* Header Section Design Start */
+.head {
+    padding: 20px;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(66, 66, 66, 1);
+}
+
+/* (navbar done) now Banner desiign start */
+.banner {
+    margin-top: 70px;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgba(19, 19, 19, 1);
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.banner-content>* {
+    margin-bottom: 20px;
+}
+
+/* header Section design over */
+
+
+/* Main Section Disign Start */
+
+
+
+/* Responsive Design Start */
+
+@media screen and (max-width: 600px) {
+
+    .navbar,
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .head {
+        padding: 10px;
+    }
+
 }
